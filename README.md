@@ -7,7 +7,7 @@ and Linux (x86_64 and arm64).
 ## Install
 
 ```sh
-brew tap hodeitek/tap
+brew tap hodeitek/hodeishield
 brew install hodeishield
 ```
 
