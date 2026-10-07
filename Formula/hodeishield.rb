@@ -7,23 +7,23 @@ class Hodeishield < Formula
   # One universal binary serves both Mac architectures.
   on_macos do
     on_intel do
-      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.2.0/hodeishield-0.2.0-universal-apple-darwin.tar.gz"
-      sha256 "ea242f998c49999d9b9a0b5ef6275fd902719c5fb02ee5aceed0a2366a708291"
+      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.3.0/hodeishield-0.3.0-universal-apple-darwin.tar.gz"
+      sha256 "b19f2fb770963bdd62c6b9dfb370e1f8940ca2c424d725ee4a0dc2f5cb99d605"
     end
     on_arm do
-      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.2.0/hodeishield-0.2.0-universal-apple-darwin.tar.gz"
-      sha256 "ea242f998c49999d9b9a0b5ef6275fd902719c5fb02ee5aceed0a2366a708291"
+      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.3.0/hodeishield-0.3.0-universal-apple-darwin.tar.gz"
+      sha256 "b19f2fb770963bdd62c6b9dfb370e1f8940ca2c424d725ee4a0dc2f5cb99d605"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.2.0/hodeishield-0.2.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b017d5990d868b7ffa4b4aecfa9ed9e71c58839321905ab140b0ed9a1cc0ad97"
+      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.3.0/hodeishield-0.3.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "4b15ec84d051dddb3e9c28dae7f3a845b31a191543028ebe9abe97d596e46bbd"
     end
     on_arm do
-      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.2.0/hodeishield-0.2.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "27edc7b8fe9f96e4dbbe60c29a8cde520c28c080b28f1bd47f8dfcbe403d6a01"
+      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.3.0/hodeishield-0.3.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "2d5912e746e7bb4722403a8518db0dbef3187d53bec74c6c9626147136edecba"
     end
   end
 
