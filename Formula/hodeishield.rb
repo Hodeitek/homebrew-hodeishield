@@ -7,29 +7,30 @@ class Hodeishield < Formula
   # One universal binary serves both Mac architectures.
   on_macos do
     on_intel do
-      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.4.1/hodeishield-0.4.1-universal-apple-darwin.tar.gz"
-      sha256 "0abb420bbaa30a4a01df7fb7fa66499b2a8f514f332684284ce9c1be09b86051"
+      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.4.2/hodeishield-0.4.2-universal-apple-darwin.tar.gz"
+      sha256 "fdb5b077d95397bd760c79f6df4200c4098d6622e7e41ebd89fd3ee86ca2e509"
     end
     on_arm do
-      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.4.1/hodeishield-0.4.1-universal-apple-darwin.tar.gz"
-      sha256 "0abb420bbaa30a4a01df7fb7fa66499b2a8f514f332684284ce9c1be09b86051"
+      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.4.2/hodeishield-0.4.2-universal-apple-darwin.tar.gz"
+      sha256 "fdb5b077d95397bd760c79f6df4200c4098d6622e7e41ebd89fd3ee86ca2e509"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.4.1/hodeishield-0.4.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "1b90a5a9f3a87c5ba2a12f3ebf35494e4f5b210e6176fc825bb54b04b2269c04"
+      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.4.2/hodeishield-0.4.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "7391f58a90c724bb429baec49b57e879593c092d64628849ac30c22999f1858a"
     end
     on_arm do
-      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.4.1/hodeishield-0.4.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "57f553acfa9e3e7e7ccf5664f30a3295ce92ed14a392b294fe999ebff8d0f040"
+      url "https://github.com/Hodeitek/hodeishield-cli/releases/download/v0.4.2/hodeishield-0.4.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "90ba46f7109aeb01a95f7f02de36b8dd2adbea3394c81af68ed92a9c82fa1071"
     end
   end
 
   def install
     bin.install "hodeishield"
     man1.install Dir["man/*.1"]
+    doc.install "USER-INFORMATION.md"
     generate_completions_from_executable(bin/"hodeishield", "completions")
   end
 
