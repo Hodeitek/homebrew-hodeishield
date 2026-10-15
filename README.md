@@ -7,12 +7,14 @@ and Linux (x86_64 and arm64).
 ## Install
 
 ```sh
-brew tap hodeitek/hodeishield
-brew install hodeishield
+brew install hodeitek/hodeishield/hodeishield
 ```
 
-The formula is published from the first CLI release that includes it; until then, use the archives
-on the [releases page](https://github.com/Hodeitek/hodeishield-cli/releases).
+Homebrew asks you to trust a formula from a tap other than its own before it loads it
+([Tap Trust](https://docs.brew.sh/Tap-Trust)). The full name adds this tap and trusts only this
+formula. If you added the tap before and see "Refusing to load formula … from untrusted tap", run
+`brew trust --formula hodeitek/hodeishield/hodeishield` once. There is no need to trust the whole
+tap or to turn tap trust off.
 
 ## How it is maintained
 
